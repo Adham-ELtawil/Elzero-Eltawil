@@ -1,11 +1,9 @@
 let btnScroll = document.getElementById("btnScroll")
 
 window.onscroll = function () {
-    if (window.scrollY >= 1000) {
-        btnScroll.style.display = "block"
-    } else {
-        btnScroll.style.display = "none"
-    }
+    window.scrollY >= "1000" ?
+        btnScroll.classList.add("show") :
+        btnScroll.classList.remove("show")
 }
 
 btnScroll.onclick = function () {

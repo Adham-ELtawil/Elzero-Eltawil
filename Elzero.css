@@ -46,7 +46,7 @@
 
 .btnScroll {
     position: fixed;
-    right: 40px;
+    right: -40px;
     bottom: 45px;
     background: #0075ff;
     width: 36px;
@@ -54,7 +54,7 @@
     cursor: pointer;
     border: #000000 1px solid;
     z-index: 100;
-    transition: 0.5s;
+    transition: 0.3s;
     border-radius: 10px;
 }
 
@@ -65,7 +65,11 @@
 
 .btnScroll:hover .fa-arrow-up:before {
     color: white;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.show {
+    right: 40px;
 }
 
 .header {
